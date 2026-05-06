@@ -1,0 +1,67 @@
+:root {
+    --dark:#01162b;
+    --blue:#00385a;
+    --soft:#6a90b4;
+    --light:#94a2bf;
+}
+
+/* GLOBAL */
+body {
+    margin:0;
+    font-family:sans-serif;
+    background:linear-gradient(135deg,var(--dark),var(--blue));
+    color:white;
+}
+
+/* JUDUL */
+h1 {
+    text-align:center;
+    margin-top:30px;
+}
+
+/* GAMBAR */
+center img {
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(106,144,180,0.5);
+}
+
+/* NAVBAR (TABEL) */
+table {
+    margin:30px auto;
+    border-collapse:collapse;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    border-radius:10px;
+    overflow:hidden;
+}
+
+td {
+    padding:12px 20px;
+}
+
+td a {
+    color:var(--light);
+    text-decoration:none;
+}
+
+td:hover {
+    background:rgba(255,255,255,0.1);
+}
+
+/* PARAGRAF */
+p {
+    width:80%;
+    margin:30px auto;
+    padding:20px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.05);
+    color:var(--light);
+    line-height:1.6;
+}
+
+/* LINK */
+a[target="_blank"] {
+    display:block;
+    text-align:center;
+    color:var(--soft);
+}

@@ -1,0 +1,50 @@
+:root {
+    --dark:#01162b;
+    --blue:#00385a;
+    --soft:#6a90b4;
+    --light:#94a2bf;
+}
+
+/* GLOBAL */
+body {
+    margin:0;
+    font-family:sans-serif;
+    background:linear-gradient(135deg,var(--dark),var(--blue));
+    color:white;
+}
+
+/* NAVBAR */
+table {
+    margin:20px auto;
+    background:rgba(255,255,255,0.05);
+    border-radius:10px;
+}
+
+td {
+    padding:10px 15px;
+}
+
+td a {
+    color:var(--light);
+    text-decoration:none;
+}
+
+/* CARD */
+.card {
+    width:400px;
+    margin:50px auto;
+    padding:30px;
+    text-align:center;
+
+    background:rgba(255,255,255,0.05);
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+}
+
+.card img {
+    border-radius:50%;
+}
+
+.card p {
+    color:var(--light);
+}
