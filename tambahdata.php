@@ -51,7 +51,7 @@
 
     <br></br>
 
-    <a href ="mahasiswa.html"> Back </a>
+    <a href ="mahasiswa.php"> Back </a>
     
      </div>
 </body>

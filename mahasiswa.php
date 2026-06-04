@@ -16,14 +16,14 @@
     <!-- Menu Navigasi -->
     <table align="center" border="1" cellpadding="10">
         <tr>
-            <td><a href="index.html">Home</a></td>
-            <td><a href="profil.html">Profile</a></td>
-            <td><a href="kontak.html">Kontak</a></td>
-            <td><a href="mahasiswa.html">Data Mahasiswa</a></td>
+            <td><a href="index.php">Home</a></td>
+            <td><a href="profil.php">Profile</a></td>
+            <td><a href="kontak.php">Kontak</a></td>
+            <td><a href="mahasiswa.php">Data Mahasiswa</a></td>
         </tr>
     </table>
 
-    <h2 style="text-align: center;"> <a href="tambahdata.html">
+    <h2 style="text-align: center;"> <a href="tambahdata.php">
         <button> Tambah Data </button>
     </a> 
     </h2>
@@ -33,18 +33,27 @@
     <table border="1" align="center" cellpadding="10">
         <tr>
             <th>No</th>
-            <th>Foto</th>
             <th>Nama</th>
             <th>NIM</th>
-            <th>Jurusan</th>
+            <th>Program Studi</th>
+            <th>Email</th>
+            <th>No. HP</th>
+            <th>Foto</th>
+            <th>Aksi</th>
         </tr>
 
         <tr>
             <td>1</td>
-            <td><img src="asset/image/Ahmad.jpg" width="80"></td>
             <td>Ahmad Musim</td>
             <td>2026001</td>
             <td>Informatika</td>
+            <td>ahmad.mus@gmail.com</td>
+            <td>081123455678</td>
+            <td><img src="Asset/Image/Ahmad.jpg" width="80"></td>
+            <td>
+                <a href="editdata.php"><button>Edit</button></a>
+                <a href="hapusdata.php"><button>Hapus</button></a>
+            </td>
         </tr>
 
         <tr>
