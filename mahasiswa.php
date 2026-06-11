@@ -1,3 +1,13 @@
+<?php
+
+require "fungsi.php";
+
+$qmahasiswa = "SELECT * FROM mahasiswa";
+
+$qmahasiswas = tampildata($qmahasiswa); // array associative
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,21 +52,29 @@
             <th>Aksi</th>
         </tr>
 
+        <?php
+
+            $i = 1;
+            foreach($qmahasiswas as $mhs)
+                {
+
+        ?>
+
         <tr>
-            <td>1</td>
-            <td>Ahmad Musim</td>
-            <td>2026001</td>
-            <td>Informatika</td>
-            <td>ahmad.mus@gmail.com</td>
-            <td>081123455678</td>
-            <td><img src="Asset/Image/Ahmad.jpg" width="80"></td>
+            <td><?= $i ?></td>
+            <td><?php echo $mhs["nama"] ?></td>
+            <td><?php echo $mhs["nim"] ?></td>
+            <td><?php echo $mhs["prodi"] ?></td>
+            <td><?= $mhs["email"] ?></td>
+            <td><?= $mhs["no_hp"] ?></td>
+            <td><img src="Asset/Image/<?= $mhs["foto"] ?>" width="80"></td>
             <td>
                 <a href="editdata.php"><button>Edit</button></a>
                 <a href="hapusdata.php"><button>Hapus</button></a>
             </td>
         </tr>
 
-        <tr>
+        <!-- <tr>
             <td>2</td>
             <td><img src="Asset/Image/Chipi.jpg" width="80"></td>
             <td>Chipi Chapa</td>
@@ -70,7 +88,13 @@
             <td>Dubi Daba</td>
             <td>2026003</td>
             <td>Sistem Informasi</td>
-        </tr>
+        </tr> -->
+
+        <?php
+
+            $i++;
+                    }
+        ?>
 
     </table>
 
