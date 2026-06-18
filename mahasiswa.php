@@ -70,7 +70,7 @@ $qmahasiswas = tampildata($qmahasiswa); // array associative
             <td><img src="Asset/Image/<?= $mhs["foto"] ?>" width="80"></td>
             <td>
                 <a href="editdata.php"><button>Edit</button></a>
-                <a href="hapusdata.php"><button>Hapus</button></a>
+                <a href="hapusdata.php?id=<?= $mhs['id'] ?>" onclick="return confirm('YAKEUNNN?')"><button>Hapus</button></a>
             </td>
         </tr>
 
