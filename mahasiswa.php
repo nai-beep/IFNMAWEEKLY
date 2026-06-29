@@ -69,7 +69,7 @@ $qmahasiswas = tampildata($qmahasiswa); // array associative
             <td><?= $mhs["no_hp"] ?></td>
             <td><img src="Asset/Image/<?= $mhs["foto"] ?>" width="80"></td>
             <td>
-                <a href="editdata.php"><button>Edit</button></a>
+                <a href="ubahdata.php?id=<?= $mhs['id'] ?>"><button>Edit</button></a>
                 <a href="hapusdata.php?id=<?= $mhs['id'] ?>" onclick="return confirm('YAKEUNNN?')"><button>Hapus</button></a>
             </td>
         </tr>
